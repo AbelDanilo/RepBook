@@ -1,0 +1,66 @@
+body {
+    background: rgb(216, 211, 211);
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.808);
+}
+
+.bod {
+    background-color: rgba(0, 0, 0, 0.432);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#index_gig {
+    position: relative;
+    margin: auto auto;
+}
+
+#nav_bar {
+    width: 100%;
+    position: fixed;
+}
+
+.form-group,
+.card-header,
+.n_tcb,
+.card,
+.tx_ac {
+    max-width: 25em;
+    max-height: 30em;
+}
+
+footer {
+    background: linear-gradient(180deg, rgb(199, 197, 197), rgb(216, 211, 211));
+    text-align: center;
+    color: #2b3137;
+    border-top: 1px solid #0d0d0e;
+    padding: 50px 30px;
+    line-height: 1.8;
+}
+
+main {
+    background-attachment: fixed;
+    background-image: url(img/library-869061_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer,
+footer * {
+    background: #09090a;
+    color: white;
+}
+
+
+/*.n_tcb {
+    min-height: 20em;
+}*/

@@ -1,0 +1,61 @@
+{{!-- 
+ --}}
+
+<link rel="stylesheet" href="form.css">
+
+<form action="/form" method="POST">
+	<div id="contact-form" class="form-container rounded">
+		<div class="row">
+			<div class="form-title mx-auto">
+				<span style="color: black;">{{head}}</span>
+			</div>
+		</div>
+		<div class="input-container">
+			<div class="row">
+				<span class="req-input rounded btn-dark">
+					<span class="input-status" data-toggle="tooltip" data-placement="top"
+						title="Escriba el código MNF."> </span>
+					<input type="text" data-min-length="8" placeholder="MNF" name="id" value="{{book.id}}" required>
+					<input type="hidden" name="_id" value="{{book._id}}">
+				</span>
+			</div>
+			<div class="row">
+				<span class="req-input rounded">
+					<span class="input-status" data-toggle="tooltip" data-placement="top"
+						title="Escriba el titulo del libro."> </span>
+					<input name="titulo" type="text" placeholder="Titulo" value="{{book.titulo}}" required>
+				</span>
+			</div>
+			<div class="row">
+				<span class="req-input rounded">
+					<span class="input-status" data-toggle="tooltip" data-placement="top"
+						title="Escriba el nombre y apellidos del autor."> </span>
+					<input name="autor" type="text" placeholder="Autor" value="{{book.autor}}" required required>
+				</span>
+			</div>
+			<div class="row">
+				<span class="req-input rounded">
+					<span class="input-status" data-toggle="tooltip" data-placement="top"
+						title="Escriba el nombre de la editorial."> </span>
+					<input name="editorial" type="text" placeholder="Editorial" value="{{book.editorial}}" required>
+				</span>
+			</div>
+			<div class="row">
+				<span class=""> Tipo de entrada:</span>
+			</div>
+			<div class="row">
+				<select class="custom-select w-100" name="tipoIN">
+					<option selected value="Prestamo">Préstamo</option>
+					<option value="Compra">Compra</option>
+					<option value="Donacion">Donación</option>
+				</select>
+			</div>
+			<br>
+			<div class="row ">
+				<button type="submit" class="btn btn-primary btn-lg btn-block">Guardar</button>
+				<a href="/reg" class="btn btn-dark btn-lg btn-block">Cancelar</a>
+			</div>
+
+		</div>
+	</div>
+</form>

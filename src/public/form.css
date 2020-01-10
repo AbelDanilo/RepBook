@@ -1,0 +1,205 @@
+.form-container div,
+.form-container span {
+    font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+}
+
+.form-container ::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: rgb(29, 28, 28);
+}
+
+.form-container :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: rgb(128, 126, 126);
+    opacity: 1;
+}
+
+.form-container ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: rgb(128, 126, 126);
+    opacity: 1;
+}
+
+.form-container :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgb(128, 126, 126);
+}
+
+.form-container :placeholder-shown {
+    /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+    color: rgb(128, 126, 126);
+}
+
+.row {
+    text-align: center;
+}
+
+.form-container .create-account:hover {
+    opacity: .7;
+}
+
+.form-container .create-account {
+    color: inherit;
+    margin-top: 15px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.form-container .req-input .input-status {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    float: left;
+}
+
+.form-container .input-status::before {
+    content: " ";
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    border-radius: 50%;
+    background: white;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.form-container .input-status::after {
+    content: " ";
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: rgb(26, 25, 25);
+    border-radius: 50%;
+    background: rgb(23, 61, 97);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.form-container .req-input {
+    width: 100%;
+    float: left;
+    position: relative;
+    background: rgb(54, 138, 216);
+    height: 40px;
+    display: inline-block;
+    border-radius: 0px;
+    margin: 5px 0px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.form-container .input-container {
+    padding: 0px 15px;
+}
+
+.form-container .row-input {
+    padding: 0px 5px;
+}
+
+.form-container {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 0px;
+    background: rgba(147, 201, 236, 0.827);
+    color: rgba(166, 174, 175, 0.014);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.form-container .form-title {
+    font-size: 25px;
+    color: inherit;
+    text-align: center;
+    margin-bottom: 10px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.form-container .submit-row {
+    padding: 0px 0px;
+}
+
+.form-container .btn:focus {
+    outline: 0px;
+    color: white;
+}
+
+.form-container .btn:hover {
+    transition: 0.5s ease-in-out 0s;
+    color: rgb(5, 5, 5);
+    box-shadow: 0px 0px 2px 2px rgb(131, 186, 241), inset 0px 0px 1px 1px rgb(47, 151, 236);
+}
+
+.form-container .tooltip.top .tooltip-inner {
+    border: 0px solid rgb(117, 120, 121);
+    background: #E0F7FA !important;
+    color: rgb(126, 129, 129);
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 0px;
+    padding: 10px 15px;
+}
+
+.form-container input[type=text]:focus {
+    background: rgb(255, 255, 255);
+    color: rgb(36, 34, 34);
+    border-left: 0px;
+    outline: none;
+}
+
+.form-container input[type=text]:hover {
+    background: rgb(255, 255, 255);
+    border-top: 1px solid rgb(52, 151, 233);
+    border-left: 1px solid rgb(52, 151, 233);
+    border-bottom: 1px solid rgb(52, 151, 233);
+}
+
+.form-container input[type=text] {
+    width: calc(100% - 50px);
+    float: left;
+    border-radius: 0px 3px 3px 0px;
+    border-right: 0px solid red;
+    border-top: 1px solid rgb(52, 151, 233);
+    border-left: 1px solid rgb(52, 151, 233);
+    border-bottom: 1px solid rgb(52, 151, 233);
+    padding: 0px 9px;
+    height: 40px;
+    line-height: 40px;
+    color: rgb(12, 12, 12);
+    background: rgb(54, 138, 216);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.form-container {
+    min-width: 300px;
+    max-width: 550px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    background: rgb(52, 151, 233);
+}

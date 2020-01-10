@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="" itemprop="image">
+    <title>RegBook</title>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="material-icons/css/bootstrap.min.css">
+    <link rel="stylesheet" href="material-icons/iconfont/material-icons.css">
+   
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="flex-column" onload="removeAlert();">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-darck">
+        <a class="navbar-brand" href="#">RegBook</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/" id="index">Inicio </a>
+                </li>
+                <li class="nav-item" id="reg">
+                    <a class="nav-link" href="/reg" id="reg">Registro</a>
+                </li>
+                <li class="nav-item float-right">
+                    <a class="nav-link" href="/about" id="about">Conócenos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    {{#if message }}
+    <div class="alert alert-danger position-absolute mt-2 ml-3" role="alert" id="alerta">
+        {{message}}
+    </div>
+    {{/if }}
+    <main class="w-100">
+        {{{body}}}
+    </main>
+    <footer id="" class="">
+        <div class="navbar-dark text-center">
+
+            <p>
+                © 2019 Copyright . <strong> Trolberto.Corp</strong>
+            </p>
+        </div>
+    </footer>
+   
+    <!-- jQuery -->
+    <script type="text/javascript" src="bootstrap-4.3.1-dist/js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="bootstrap-4.3.1-dist/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript"></script>
+    <script>
+        let al = document.getElementById("alerta");
+        function effect() {
+            setTimeout(function () {
+                if (al.style.opacity > 0) {
+                    al.style.opacity = al.style.opacity - 0.05;
+                    effect()
+                }
+            }, 40);
+        }
+        function removeAlert() {
+            if (al != null) {
+                al.style.opacity = 1;
+                setTimeout(effect, 1500);
+                setTimeout(() => {
+                    al.parentNode.removeChild(al)
+                }, 5000);
+            }
+
+        }
+    </script>
+</body>
+
+</html>
